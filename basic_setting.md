@@ -6,7 +6,7 @@
 
 ## Django로 프로젝트 시작하기
 
-먼저 바탕화면에 likelion 폴더를 만듭니다. 그후 VS code를 켜고 만든 likelion 폴더를 엽니다. 
+먼저 바탕화면에 likelion 폴더를 만듭니다. 그후 VS code를 켜고 만든 likelion 폴더를 엽니다.
 
 ~~~
 cd Desktop
@@ -32,6 +32,7 @@ code .
 ## 터미널 Bash로 설정하기
 
 - Vs code를 실행해서 `ctrl`  + ` shift` + `p`를 눌러 설정에 들어갑니다.
+<p> <img src = "../image/bash1.png" ></p>
 
 - 검색창에 `Terminal: Select Defualt Shell` 를 검색한 후 클릭합니다.
 
@@ -74,7 +75,7 @@ source myvenv/Scripts/activate
 
 위 명령어를 치면 터미널의 명령어 줄 위에 (myvenv) 라는 것이 생깁니다. 가상환경이 실행되었다는 뜻입니다.
 
->##### 가상환경을 사용하는 이유 
+>##### 가상환경을 사용하는 이유
 >
 >-> 다양한 환경에서 작업하기 위해
 >
@@ -84,7 +85,7 @@ source myvenv/Scripts/activate
 
 #### 가상환경 끄기
 
-~~~ 
+~~~
 deactivate
 ~~~
 
@@ -107,7 +108,7 @@ pip은 파이썬관련 패키지를 설치하기 위해 사용되는 명령어�
 > 만일 아래와 같은 사진처럼 뜬다면
 >
 > ~~~
-> python -m pip install --upgrade pip 
+> python -m pip install --upgrade pip
 > ~~~
 >
 > 위 명령어를 쳐서 업그레이드를 진행해 주세요.

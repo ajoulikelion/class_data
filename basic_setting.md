@@ -15,7 +15,7 @@ cd likelion
 
 혹은 likelion 폴더에 오른쪽 버튼을 누른 후 Git Bash Here을 클릭해 터미널 명령어를 활용하여 VS code를 열어도 좋습니다.
 
-```Bash 
+```Bash
 code .
 ```
 
@@ -41,6 +41,9 @@ code .
 
 
 
+장고 프로젝트를 시작하려면 가장 먼저 가상환경을 켜야합니다.
+
+
 ---
 
 
@@ -52,6 +55,8 @@ code .
 #### python -m venv 가상환경명
 
 ```
+
+=======
 python -m venv myvenv
 ```
 

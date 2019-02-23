@@ -6,7 +6,7 @@
 
 ## Django로 프로젝트 시작하기
 
-먼저 바탕화면에 likelion 폴더를 만듭니다. 그후 VS code를 켜고 만든 likelion 폴더를 엽니다. 
+먼저 바탕화면에 likelion 폴더를 만듭니다. 그후 VS code를 켜고 만든 likelion 폴더를 엽니다.
 
 ~~~
 cd Desktop
@@ -32,10 +32,14 @@ code .
 ## 터미널 Bash로 설정하기
 
 - Vs code를 실행해서 `ctrl`  + ` shift` + `p`를 눌러 설정에 들어갑니다.
+<p> <img src = "image/bash1.png" ></p>
 
 - 검색창에 `Terminal: Select Defualt Shell` 를 검색한 후 클릭합니다.
+<p> <img src = "image/bash2.png" ></p>
 
 - 그 후 `Git bash` 를 선택합니다.
+<p> <img src = "image/bash3.png" ></p>
+<p> <img src = "image/bash4.PNG" ></p>
 
   > linux 환경을 다운받으라면 아무도 안 받을 거니깐 linux와 문법이 같은 bash 터미널을 사용하기 위함입니다!
 
@@ -54,13 +58,12 @@ code .
 
 #### python -m venv 가상환경명
 
-```
 
-=======
+```
 python -m venv myvenv
 ```
-
 위 명령을 치고 나면 옆에 myvenv라는 폴더가 하나 생깁니다.
+<p> <img src = "image/venv1.PNG" ></p>
 
 
 
@@ -71,10 +74,10 @@ python -m venv myvenv
 ~~~
 source myvenv/Scripts/activate
 ~~~
-
+<p> <img src = "image/venv2.PNG" ></p>
 위 명령어를 치면 터미널의 명령어 줄 위에 (myvenv) 라는 것이 생깁니다. 가상환경이 실행되었다는 뜻입니다.
 
->##### 가상환경을 사용하는 이유 
+>##### 가상환경을 사용하는 이유
 >
 >-> 다양한 환경에서 작업하기 위해
 >
@@ -84,7 +87,7 @@ source myvenv/Scripts/activate
 
 #### 가상환경 끄기
 
-~~~ 
+~~~
 deactivate
 ~~~
 
@@ -105,9 +108,10 @@ pip install django
 pip은 파이썬관련 패키지를 설치하기 위해 사용되는 명령어입니다.
 
 > 만일 아래와 같은 사진처럼 뜬다면
->
+><p> <img src = "image/venv3.PNG" ></p>
+
 > ~~~
-> python -m pip install --upgrade pip 
+> python -m pip install --upgrade pip
 > ~~~
 >
 > 위 명령어를 쳐서 업그레이드를 진행해 주세요.
@@ -135,12 +139,14 @@ pip은 파이썬관련 패키지를 설치하기 위해 사용되는 명령어�
 ~~~
 django-admin startproject wordcount
 ~~~
+<p> <img src = "image/project1.png" ></p>
 
 이 후에 wordcount를 하는 페이지를 만들거니 프로젝트 명은 wordcount로 통일해주세요!
 
 
 
 wordcount 안에 wordcount라는 폴더가 생겼습니다. 지칭이 헷갈리니 상위 폴더 이름을 wordcountproject로 바꿔줍니다. 그 후 아래 명령어를 입력하여 상위폴더 안으로 터미널 경로를 이동합니다.
+<p> <img src = "image/project2.png" ></p>
 
 ~~~
 cd wordcountproject
@@ -161,11 +167,13 @@ cd wordcountproject
 ~~~
 python manage.py runserver
 ~~~
-
+<p> <img src = "image/project3.png" ></p>
 http://127.0.0.1:8000/ 이라는 부분을 `ctrl` + `마우스 왼쪽버튼`을 눌러 브라우저 창을 열어봅시다.
 
 >위 주소는 장고개발을 위해 사용하는 개발서버입니다. 다른 사람들은 접속할 수 없고 개발 하고 있는 사람만 접속할 수 있습니다.
 
-위 화면이 뜨면 성공적으로 장고프로젝트를 생성하고 서버를 작동시킨 겁니다!!! 짝짝짝~~ 이제 첫 발걸음을 잘 딛었네요!
+<p> <img src = "image/project4.PNG" ></p>
+
+위 화면이 뜨면 성공적으로 장고프로젝트를 생성하고 서버를 작동시킨 겁니다!!! 짝짝짝~~ 이제 첫 발걸음을 잘 디뎠네요!
 
 서버를 끄려면 서버가 실행중인 터미널 창에서 `ctrl` + `c`를 누르면 됩니다.

@@ -32,7 +32,7 @@ code .
 ## 터미널 Bash로 설정하기
 
 - Vs code를 실행해서 `ctrl`  + ` shift` + `p`를 눌러 설정에 들어갑니다.
-<p> <img src = "../image/bash1.png" ></p>
+<p> <img src = "image/bash1.png" ></p>
 
 - 검색창에 `Terminal: Select Defualt Shell` 를 검색한 후 클릭합니다.
 

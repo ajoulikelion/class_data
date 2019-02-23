@@ -60,8 +60,6 @@ code .
 
 
 ```
-
-=======
 python -m venv myvenv
 ```
 위 명령을 치고 나면 옆에 myvenv라는 폴더가 하나 생깁니다.
@@ -111,7 +109,6 @@ pip은 파이썬관련 패키지를 설치하기 위해 사용되는 명령어�
 
 > 만일 아래와 같은 사진처럼 뜬다면
 ><p> <img src = "image/venv3.PNG" ></p>
-
 > ~~~
 > python -m pip install --upgrade pip
 > ~~~
@@ -149,6 +146,7 @@ django-admin startproject wordcount
 
 wordcount 안에 wordcount라는 폴더가 생겼습니다. 지칭이 헷갈리니 상위 폴더 이름을 wordcountproject로 바꿔줍니다. 그 후 아래 명령어를 입력하여 상위폴더 안으로 터미널 경로를 이동합니다.
 <p> <img src = "image/project2.png" ></p>
+
 ~~~
 cd wordcountproject
 ~~~

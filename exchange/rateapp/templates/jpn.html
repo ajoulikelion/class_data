@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<br>
+<script>
+    function onlyNumber(event){
+        event = event || window.event;
+        var keyID = (event.which) ? event.which : event.keyCode;
+        if ( (keyID >= 48 && keyID <= 57) || (keyID >= 96 && keyID <= 105) || keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 ) 
+            return;
+        else
+            return false;
+    }
+     
+    function removeChar(event) {
+        event = event || window.event;
+        var keyID = (event.which) ? event.which : event.keyCode;
+        if ( keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 ) 
+            return;
+        else
+            event.target.value = event.target.value.replace(/[^0-9]/g, "");
+    }
+</script>
+
+<h1>엔화 환율 계산 페이지 입니다.</h1>
+
+<form action="{% url 'result' %}">
+    <textarea cols="50" rows="2" name="fulltext1" onkeydown='return onlyNumber(event)' onkeyup='removeChar(event)'></textarea>
+    <input type="submit" value="Exchange" />
+    <a href ="{%url 'about'%}">홈으로~!</a>
+</form>
+
+{% endblock %}

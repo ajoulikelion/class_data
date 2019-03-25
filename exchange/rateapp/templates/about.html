@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<br>
+
+<div class="jumbotron">
+    <h1 class="display-4">환율계산기</h1>
+    <br>
+    <p class="lead">7기 박규리,이민아가 만든 환율계산기! 뚜둔</p>
+    <hr class="my-4">
+    <p>어떤 나라로 여행가고 싶으신가요??</p>
+    <a class="btn btn-danger" href="{% url 'japan' %}" role="button">일본</a>
+    <a class="btn btn-warning" href="{% url 'china' %}" role="button">중국</a>
+    <a class="btn btn-success" href="{% url 'usa' %}" role="button">미국</a>
+</div>
+
+{% endblock %}
+

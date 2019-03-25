@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<br>
+
+<h1>당신이 검색한 돈은~~~!!!</h1>
+<br>
+<h1>입력한 돈</h1>
+
+
+{% if fulltext1 != null %}
+    {{fulltext1}} 원
+{%elif fulltext2 != null %}
+    {{fulltext2}} 원
+{%elif fulltext3 != null %}
+    {{fulltext3}} 원
+{%endif%}
+
+
+<br>
+<h1>변환된 돈</h1>
+
+{% if fulltext1 != null %}
+    {{jpn}} 옌
+{%elif fulltext2 != null %}
+    {{cny}} 위안
+{%elif fulltext3 != null %}
+    {{usd}} 달러
+{%endif%}
+
+  
+
+
+{% endblock %}
